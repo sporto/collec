@@ -6,7 +6,7 @@ Simple JavaScript collections for database models
 ## Install
 
 ```
-npm install collect --save
+npm install collec --save
 ```
 
 ### Browser global
