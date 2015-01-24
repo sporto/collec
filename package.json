@@ -19,5 +19,11 @@
   "bugs": {
     "url": "https://github.com/sporto/collec/issues"
   },
-  "homepage": "https://github.com/sporto/collec"
+  "homepage": "https://github.com/sporto/collec",
+  "dependencies": {
+    "lodash": "^2.4.1"
+  },
+  "devDependencies": {
+    "expect.js": "^0.3.1"
+  }
 }
