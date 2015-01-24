@@ -9,18 +9,29 @@ Simple JavaScript collections for database models
 npm install collect --save
 ```
 
-## Id keys
+### Browser global
+
+This library requires lodash.
+
+```
+<script src='scripts/lodash.js'></script>
+<script src='scripts/collec.js'></script>
+```
+
+## API
+
+### Id keys
 
 All items in the collection must have an id key e.g. 'id'. By default Collect assumes 'id'. See `setKey` below to change this.
 
-## new
+### new
 
 ```js
 var records = [{id: 1, label: 'Sam'}, {id: 2, label: 'Tess'}];
 var col = Collec(records);
 ```
 
-## add
+### add
 
 Add items to the collection.
 Takes one item or an array of items.
@@ -30,7 +41,7 @@ col.add(oneItem)
 col.add(manyItems)
 ```
 
-## all
+### all
 
 Get all items from the collection.
 
@@ -38,7 +49,7 @@ Get all items from the collection.
 var items = col.all()
 ```
 
-## count
+### count
 
 Get the size of the collection
 
@@ -46,7 +57,7 @@ Get the size of the collection
 col.count()
 ```
 
-## filter
+### filter
 
 Returns a filtered collection using a filtering function
 
@@ -56,7 +67,7 @@ var items = col.filter(function (item) {
 })
 ```
 
-## get 
+### get 
 
 Get one item by id
 
@@ -64,7 +75,7 @@ Get one item by id
 var item = col.get(22)
 ```
 
-## getIndex
+### getIndex
 
 Get the index of an item using the id
 
@@ -72,7 +83,7 @@ Get the index of an item using the id
 var ix = col.getIndex(22)
 ```
 
-## replace
+### replace
 
 Replaces one item or many.
 This discards any previous data from the replace items.
@@ -82,7 +93,7 @@ col.replace(oneItem)
 col.replace(manyItems)
 ```
 
-## remove
+### remove
 
 Remove one item or many using the id.
 
@@ -91,7 +102,7 @@ col.remove(id)
 col.remove(ids)
 ```
 
-## update
+### update
 
 Updates one item or many.
 This merges the given data with the existing one.
@@ -101,7 +112,7 @@ col.update(oneItem)
 col.update(manyItems)
 ```
 
-## setKey
+### setKey
 
 Set the key used for finding items e.g. '_id'.
 By default 'id' is assumed.
@@ -109,3 +120,17 @@ By default 'id' is assumed.
 ```js
 col.setKey('_id')
 ```
+
+## Test
+
+```
+npm test
+```
+
+## Build
+
+```
+gulp
+```
+
+
