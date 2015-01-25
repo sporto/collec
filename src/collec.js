@@ -120,7 +120,6 @@
 			count:        count,
 			filter:       _.filter.bind(null, collection),
 			get:          get,
-			getIndex:     getIndex,
 			replace:      replace,
 			remove:       remove,
 			update:       update,

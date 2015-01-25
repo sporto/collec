@@ -75,14 +75,6 @@ Get one item by id
 var item = col.get(22)
 ```
 
-### getIndex
-
-Get the index of an item using the id
-
-```js
-var ix = col.getIndex(22)
-```
-
 ### replace
 
 Replaces one item or many.
