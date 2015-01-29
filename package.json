@@ -2,7 +2,7 @@
   "name": "collec",
   "version": "1.0.1",
   "description": "DB models collection",
-  "main": "collec.js",
+  "main": "dist/collec.js",
   "scripts": {
     "test": "mocha"
   },

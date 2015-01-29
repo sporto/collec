@@ -22,11 +22,10 @@
 
 	if (_ == null) throw new Error('lodash is null');
 
-	function collec(collection) {
+	function collec(records) {
 
 		var idKey = 'id';
-
-		// var collection  = records
+		var collection = {};
 
 		function addMany(records) {
 			if (!_.isArray(records)) throw new Error('Not an array');
