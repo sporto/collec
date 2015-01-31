@@ -25,7 +25,11 @@
 	function collec(records) {
 
 		var idKey = 'id';
-		var collection = {};
+		var collection = [];
+
+		if (_.isArray(records)) {
+			collection = records;
+		}
 
 		function addMany(records) {
 			if (!_.isArray(records)) throw new Error('Not an array');

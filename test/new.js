@@ -7,4 +7,10 @@ describe('new', function () {
 		var col = Collec(records());
 		expect(col.count()).to.be(3);
 	});
+
+	it('creates a collection without params', function (){
+		var col = Collec();
+		expect(col.all()).to.eql([]);
+		expect(col.count()).to.be(0);
+	});
 });
